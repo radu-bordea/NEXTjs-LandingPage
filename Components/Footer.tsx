@@ -25,7 +25,7 @@ const Footer = () => {
             className="flex items-center gap-2 hover:text-foreground transition-colors"
           >
             <Mail className="h-4 w-4" />
-            <span>info@Romstream Company.com</span>
+            <span>info@Romstream.com</span>
           </Link>
         </div>
 
