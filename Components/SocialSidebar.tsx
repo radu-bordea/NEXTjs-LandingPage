@@ -21,12 +21,6 @@ const socials = [
   },
 ];
 
-const spring = {
-  type: "spring",
-  stiffness: 260,
-  damping: 20,
-};
-
 const SocialSidebar = () => {
   return (
     <div className="fixed right-0 top-[65%] z-40 -translate-y-1/2 hidden lg:flex flex-col gap-2">
@@ -46,7 +40,11 @@ const SocialSidebar = () => {
             rel="noreferrer"
             initial={{ x: 80 }}
             whileHover={{ x: 0 }}
-            transition={spring}
+            transition={{
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
             className="flex w-[130px] items-center justify-start rounded-l-lg border border-border bg-background/90 px-3 py-2 text-sm font-medium text-foreground shadow-md"
           >
             <div className="flex items-center gap-2">
